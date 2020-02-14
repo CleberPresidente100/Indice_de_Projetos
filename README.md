@@ -1,2 +1,17 @@
-# Indice_de_Projetos
-Criar esta lista foi a maneira que eu encontrei para organizar todos os meus projetos. aqui do GitHub.
+# Índice de Projetos
+
+Data Science Academy
+
+  Deep Learning Book
+  
+  Python Fundamentos
+  
+Anhanguera
+  
+  Algoritmos e Estrutura de Dados
+  
+  Linguagens Formais e Autômatos
+  
+Udemy
+
+  Flutter
