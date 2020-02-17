@@ -1,17 +1,14 @@
 # Índice de Projetos
 
-<h5>Data Science Academy</h5>
+<dl>
+    <dt>Data Science Academy</dt>
+        <dd>Deep Learning Book</dd>
+        <dd>Python Fundamentos</dd>
 
-  Deep Learning Book
-  
-  Python Fundamentos
-  
-Anhanguera
-  
-  Algoritmos e Estrutura de Dados
-  
-  Linguagens Formais e Autômatos
-  
-Udemy
+    <dt>Anhanguera</dt>    
+        <dd>Algoritmos e Estrutura de Dados</dd>
+        <dd>Linguagens Formais e Autômatos</dd>
 
-  Flutter
+    <dt>Udemy</dt>
+        <dd>Flutter</dd>
+</dl>
