@@ -28,12 +28,18 @@
         <div class="nivel_01">Udemy</div>
             <div class="nivel_02">Flutter</div>
                 <div class="nivel_03">
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_01_contador_de_pessoas">App 01 --> Contador de Pessoas</a></p>
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_02_calculo_imc">App 02 --> Cálculo de IMC</a></p>
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_03_conversor_de_moedas">App 03 --> Conversor de Moedas</a></p>
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_04_lista_de_tarefas">App 04 --> Lista de Tarefas</a></p>
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_05_buscador_de_gif">App 05 --> Buscador de Gifs</a></p>
-                    <p><a href="https://github.com/CleberPresidente100/FlutterUdemy_App_06_agenda_de_contatos">App 06 --> Agenda de Contatos</a></p>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_01_contador_de_pessoas">App 01 --> Contador de Pessoas</a>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_02_calculo_imc">App 02 --> Cálculo de IMC</a>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_03_conversor_de_moedas">App 03 --> Conversor de Moedas</a>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_04_lista_de_tarefas">App 04 --> Lista de Tarefas</a>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_05_buscador_de_gif">App 05 --> Buscador de Gifs</a>
+                    <a class="quebrar_linha"
+                       href="https://github.com/CleberPresidente100/FlutterUdemy_App_06_agenda_de_contatos">App 06 --> Agenda de Contatos</a>
                 </div>
     </div>
     <div class="ramificacao">
@@ -45,3 +51,5 @@
     </div>
 </body>
 </html>
+
+
