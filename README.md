@@ -1,6 +1,6 @@
 # Índice de Projetos
 
-Data Science Academy
+<b>Data Science Academy</b>
 
   Deep Learning Book
   
