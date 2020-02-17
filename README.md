@@ -11,7 +11,7 @@
             <dd>Algoritmos e Estrutura de Dados</dd>
             <dd>Linguagens Formais e Autômatos</dd>
             <dt>Udemy</dt>
-            <dd>FlutterTeste</dd>
+            <dd>Flutter</dd>
         </dl>
     </body>
 </html>
