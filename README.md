@@ -31,7 +31,7 @@
                         <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_01_contador_de_pessoas">App 01 --> Contador de Pessoas</a>
                     </div>
                     <div class="nivel_03">
-                        <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_02_calculo_imc">App 02 --> Calculo de IMC</a>
+                        <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_02_calculo_imc">App 02 --> Cálculo de IMC</a>
                     </div>
                     <div class="nivel 03">
                         <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_03_conversor_de_moedas">App 03 --> Conversor de Moedas</a>
@@ -40,7 +40,7 @@
                         <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_04_lista_de_tarefas">App 04 --> Lista de Tarefas</a>
                     </div>
                     <div class="nivel 03">
-                        <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_05_buscador_de_gif">App 05 --> Buscador de Gif</a>
+                        <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_05_buscador_de_gif">App 05 --> Buscador de Gifs</a>
                     </div>
                     <div class="nivel 03">
                         <a href="https://github.com/CleberPresidente100/FlutterUdemy_App_06_agenda_de_contatos">App 06 --> Agenda de Contatos</a>
