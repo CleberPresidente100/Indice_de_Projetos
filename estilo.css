@@ -1,7 +1,8 @@
 .nivel_01{
-    padding-left: 0px;
+    padding-left: 0px;    
+    padding-bottom: 10px;
     font-weight: bold;
-    color: #ff0000;
+    color: rgb(34, 177, 76);
     text-transform: uppercase;
 }
 
@@ -11,16 +12,15 @@
 
 .nivel_03{
     padding-left: 60px;
+    padding-bottom: 30px;
 }
 
 .nivel_04{
     padding-left: 90px;
 }
 
-.ramificacao{
-    padding-bottom: 30px;
-}
-
 .quebrar_linha{
 	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
