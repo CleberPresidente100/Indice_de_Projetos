@@ -1,6 +1,6 @@
 <!-- Acessar este link para visualizar a página: https://cleberpresidente100.github.io/Indice_de_Projetos/ -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 
 <html>
 <head>
