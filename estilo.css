@@ -1,4 +1,33 @@
 
+
+.copo{
+	width: auto;
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titulo{
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.coluna_esquerda{
+	width: 500px;
+	height: auto;
+	float: left;	
+}
+
+.coluna_direita{
+	width: 500px;
+	height: auto;
+	float: left;
+}
+
 .nivel_01{
     padding-left: 0px;    
     padding-bottom: 10px;
@@ -23,6 +52,9 @@
 
 .quebrar_linha{
 	display: block;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.projeto{	
 }
