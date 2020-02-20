@@ -27,7 +27,7 @@
 .coluna_direita{
 	width: 50%;
 	height: auto;
-	float: left;
+	float: right;
 	box-sizing: border-box;
 }
 
