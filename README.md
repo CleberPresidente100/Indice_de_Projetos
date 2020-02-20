@@ -45,9 +45,6 @@
                     </div>
 
         </div>
-        
-        
-        <div class="roda_pe">teste</div>
     
         <div class="coluna_direita">
 
