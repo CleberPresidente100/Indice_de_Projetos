@@ -2,7 +2,7 @@
 
 .copo{
 	width: 1000px;
-	height: auto;
+	height: 50px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -56,7 +56,7 @@
 	margin-bottom: 3px;
 }
 
-footer{
+.roda_pe{
 	display: block;
-	/*color: rgb(34, 177, 76);*/
+	color: rgb(34, 177, 76);
 }
