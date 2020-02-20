@@ -19,13 +19,13 @@
 .coluna_esquerda{
 	width: 500px;
 	height: auto;
-	/*float: left;*/
+	float: left;
 }
 
 .coluna_direita{
 	width: 500px;
 	height: auto;
-	/*float: left;*/
+	float: left;
 }
 
 .nivel_01{
