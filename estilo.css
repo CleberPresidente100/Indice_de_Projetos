@@ -61,7 +61,9 @@
 
 footer{
 	width: 100%;
+	float: right;
 	display: block;
+	marging-top: 10px;
 	box-sizing: border-box;
-	color: rgb(34, 177, 76);
+	/*color: rgb(34, 177, 76);*/
 }
