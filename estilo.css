@@ -2,7 +2,7 @@
 
 .copo{
 	width: 1100px;
-	height: auto;
+	height: 1000px;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: auto;
@@ -25,7 +25,7 @@
 .coluna_direita{
 	width: 500px;
 	height: 500px;
-	float: left;
+	float: right;
 }
 
 .nivel_01{
@@ -61,5 +61,6 @@
 
 .roda_pe{
 	width: 1100px;
+	height: 1000px;
 	display: block;
 }
