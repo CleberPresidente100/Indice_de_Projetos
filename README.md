@@ -84,6 +84,9 @@
 
         </div>
     </div>
+    <footer>
+        <p>Teste</p>
+    </footer>
 </body>
 </html>
 
