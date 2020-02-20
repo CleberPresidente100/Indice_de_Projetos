@@ -65,5 +65,7 @@ footer{
 	display: block;
 	marging-top: 10px;
 	box-sizing: border-box;
-	/*color: rgb(34, 177, 76);*/
+	
+	text-align: center;
+	color: rgb(34, 177, 76);
 }
