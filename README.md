@@ -14,8 +14,8 @@
 
         <div class="coluna_esquerda">
 
-            <div class="nivel_01">Data Science Academy</div>
-                <div class="nivel_02">Deep Learning Book</div>
+            <div class="nivel_01">Inteligência Artificial</div>
+                <div class="nivel_02">Deep Learning</div>
                     <div class="nivel_03">
                         <div class="quebrar_linha">
                         </div>
