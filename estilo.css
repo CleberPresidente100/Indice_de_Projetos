@@ -18,13 +18,13 @@
 
 .coluna_esquerda{
 	width: 500px;
-	height: auto;
+	height: 500px;
 	float: left;	
 }
 
 .coluna_direita{
 	width: 500px;
-	height: auto;
+	height: 500px;
 	float: left;
 }
 
