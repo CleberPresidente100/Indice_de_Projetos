@@ -45,7 +45,10 @@
                     </div>
 
         </div>
-
+        
+        
+        <div class="roda_pe">teste</div>
+    
         <div class="coluna_direita">
 
             <div class="nivel_01">Udemy</div>
@@ -81,7 +84,6 @@
 
         </div>
     </div>
-    <div class="roda_pe">teste</div>
 </body>
 </html>
 
