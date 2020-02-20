@@ -60,5 +60,8 @@
 }
 
 footer{
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
 	color: rgb(34, 177, 76);
 }
