@@ -10,7 +10,7 @@
     <!--<h1>Índice de Projetos</h1>-->
     <div class="titulo">Índice de Projetos</div>
 
-    <div class="corpo">
+    <div id="corpo">
 
         <div class="coluna_esquerda">
 
