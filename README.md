@@ -2,7 +2,7 @@
 
 <!-- <!DOCTYPE html> -->
 
-<html>
+<!-- <html lang="pt-BR"> -->
 <head>
     <link href="estilo.css" rel="stylesheet" type="text/css">
 </head>
@@ -81,7 +81,8 @@
 
         </div>
     </div>
-</body>
-</html>
+    
+<!-- </body>
+</html> -->
 
 
