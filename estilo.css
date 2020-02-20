@@ -62,10 +62,8 @@
 footer{
 	width: 100%;
 	height: auto;
-	float: none;
+	float: right;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	padding-top: 30px;
 	box-sizing: border-box;
 		
