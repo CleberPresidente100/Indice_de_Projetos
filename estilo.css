@@ -64,11 +64,9 @@ footer{
 	height: auto;
 	float: none;
 	display: block;
-	margin-top: 20px;
-	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 0px;
+	padding-top: 30px;
 	box-sizing: border-box;
 		
 	text-align: center;
