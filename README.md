@@ -81,10 +81,6 @@
 
         </div>
     </div>
-    <div class="roda_pe"></div>
-    <footer>
-        <p>Roda pé</p>
-    </footer>
 </body>
 </html>
 
