@@ -1,0 +1,5 @@
+https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/
+
+https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+
+https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md
