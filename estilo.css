@@ -60,13 +60,17 @@
 }
 
 footer{
-	width: 100%;
-	float: right;
+	width: 1000px;
+	height: auto;
+	float: none;
 	display: block;
 	margin-top: 20px;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 0px;
 	box-sizing: border-box;
-	
+		
 	text-align: center;
 	color: rgb(34, 177, 76);
 }
