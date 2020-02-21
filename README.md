@@ -11,8 +11,6 @@
     <div class="titulo">Índice de Projetos</div>
 
     <div class="corpo">
-        <p>Teste</p>
-
         <div class="coluna_esquerda">
 
             <div class="nivel_01">Inteligência Artificial</div>
@@ -45,7 +43,7 @@
                         </div>
                     </div>
 
-        </div>
+        </div> <!-- coluna_esquerda -->
     
         <div class="coluna_direita">
 
@@ -80,8 +78,8 @@
                         </div>
                     </div>
 
-        </div>
-    </div>
+        </div> <!-- coluna_direita -->
+    </div> <!-- corpo -->
     
 <!-- </body>
 </html> -->
