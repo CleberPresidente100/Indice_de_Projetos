@@ -10,10 +10,10 @@
     <!--<h1>Índice de Projetos</h1>-->
     <div class="titulo">Índice de Projetos</div>
 
-    <div id="corpo">
+    <div class="corpo">
         <p>Teste</p>
 
-        <div id="coluna_esquerda">
+        <div class="coluna_esquerda">
 
             <div class="nivel_01">Inteligência Artificial</div>
                 <div class="nivel_02">Deep Learning</div>
@@ -47,7 +47,7 @@
 
         </div>
     
-        <div id="coluna_direita">
+        <div class="coluna_direita">
 
             <div class="nivel_01">Udemy</div>
                 <div class="nivel_02">Flutter</div>
