@@ -19,14 +19,14 @@
 	display: block;
 }
 
-corpo .coluna_esquerda{
+.coluna_esquerda{
 	width: 500px;
 	height: 500px;
 	float: left;
 	box-sizing: border-box;
 }
 
-corpo .coluna_direita{
+.coluna_direita{
 	width: 500px;
 	height: 500px;
 	float: right;
