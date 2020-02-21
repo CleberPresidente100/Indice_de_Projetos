@@ -1,6 +1,6 @@
 
 
-#copo{
+.copo{
 	/*display: block;*/
 	width: 1000px;
 	height: 500px;
@@ -19,14 +19,14 @@
 	display: block;
 }
 
-#coluna_esquerda{
+corpo .coluna_esquerda{
 	width: 50%;
 	height: 100%;
 	float: left;
 	box-sizing: border-box;
 }
 
-#coluna_direita{
+corpo .coluna_direita{
 	width: 50%;
 	height: 100%;
 	float: right;
