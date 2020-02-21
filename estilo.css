@@ -20,15 +20,15 @@
 }
 
 corpo .coluna_esquerda{
-	width: 50%;
-	height: 100%;
+	width: 500px;
+	height: 500px;
 	float: left;
 	box-sizing: border-box;
 }
 
 corpo .coluna_direita{
-	width: 50%;
-	height: 100%;
+	width: 500px;
+	height: 500px;
 	float: right;
 	box-sizing: border-box;
 }
