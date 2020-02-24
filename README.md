@@ -42,11 +42,7 @@
                             <a class="projeto" href="https://github.com/CleberPresidente100/Expressoes_Matematicas">Expressões Matemáticas</a>
                         </div>
                     </div>
-
-        </div> <!-- coluna_esquerda -->
-    
-        <div class="coluna_direita">
-
+                    
             <div class="nivel_01">Udemy</div>
                 <div class="nivel_02">Flutter</div>
                     <div class="nivel_03">
@@ -70,6 +66,10 @@
                         </div>
                     </div>
 
+        </div> <!-- coluna_esquerda -->
+    
+        <div class="coluna_direita">            
+
             <div class="nivel_01">Outros</div>
                 <div class="nivel_02">Python</div>
                     <div class="nivel_03">
@@ -81,6 +81,12 @@
                     <div class="nivel_03">
                         <div class="quebrar_linha">
                             <a class="projeto" href="#">Planetinha</a>
+                        </div>
+                    </div>
+                <div class="nivel_02">AngularJS</div>
+                    <div class="nivel_03">
+                        <div class="quebrar_linha">
+                            <a class="projeto" href="#">AngularJS Exercícios</a>
                         </div>
                     </div>
 
