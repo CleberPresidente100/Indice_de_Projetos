@@ -1,0 +1,15 @@
+
+
+.titulos_container{
+    margin: 30px;
+}
+.titulos_button{
+    font-size: larger;
+    color: orangered;
+    text-decoration: none;
+
+    margin: 5px;
+
+    border: transparent;
+    background-color: transparent;
+}

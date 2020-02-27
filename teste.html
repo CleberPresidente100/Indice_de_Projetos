@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="indiceProjetos">
+    <head>
+        <title>Índice de Projetos</title>
+
+        <!-- Configuração do Mapa de Caracteres -->
+        <meta charset="UTF-8">
+
+        <!-- Inclusão de Bibliotecas -->
+        <!-- <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+        <script src="lib/jQuery/jquery-3.4.1.js"></script>
+        <script src="lib/bootstrap/bootstrap.js"></script> -->
+
+        <link href="estilo_novo.css" rel="stylesheet" type="text/css">     
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="lib/AngularJS/angular.js"></script>
+
+
+        <!-- Scripts de Teste -->
+        <script>
+            angular.module("indiceProjetos", []);
+            angular.module("indiceProjetos").controller("indiceProjetosController", function($scope){
+                
+                $scope.numero = 0;
+                $scope.mostrar = false;
+
+                $scope.alternarVisibilidade = function (){
+                    if($scope.mostrar)
+                        $scope.mostrar = false;
+                    else
+                        $scope.mostrar = true;
+
+                }
+            });
+        </script>
+
+    </head>
+    <body ng-controller="indiceProjetosController">
+
+        <div class="titulos_container">
+            <button class="titulos_button" ng-click="alternarVisibilidade()" type="button">
+                Dropdown Example <span class="caret"></span>
+            </button>
+            <ul ng-show="mostrar">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div> 
+
+        <p>
+            {{"Teste = " + numero}}
+        </p>
+    </body>
+</html>
