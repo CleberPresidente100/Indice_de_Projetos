@@ -1,9 +1,9 @@
 
 
 .corpo{
-	/*display: block;*/
+	display: block;
 	width: 1000px;
-	height: 500px;
+	height: auto;
 	margin-top: 0;
 	margin-bottom: 30px;
 	margin-left: auto;
