@@ -22,12 +22,12 @@
         <!-- Scripts de Teste -->
         <script>
             angular.module("indiceProjetos", []);
-            angular.module("indiceProjetos").controller("indiceProjetosController", function($scope){
+            angular.module("indiceProjetos").controller("indiceProjetosController", function($scope, $location){
                 
                 $scope.numero = 0;
                 $scope.mostrar = false;
 
-                $scope.alternarVisibilidade = function (){
+                $scope.alternarVisibilidade = function(){
                     if($scope.mostrar)
                         $scope.mostrar = false;
                     else
@@ -40,8 +40,14 @@
     </head>
     <body ng-controller="indiceProjetosController">
 
+        <div class="cabecalho">
+            <h1>Índice de Projetos</h1>
+            <h2>Criar esta lista foi a maneira que eu encontrei para organizar todos os meus projetos aqui do GitHub.</h2>
+            <a href="https://github.com/CleberPresidente100" class="cabecalho_button" target="blank">Acessar meu GitHub</a>
+        </div>
+
         <div class="titulos_container">
-            <button class="titulos_button" ng-click="alternarVisibilidade()" type="button">
+            <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade()" type="button">
                 Dropdown Example <span class="caret"></span>
             </button>
             <ul ng-show="mostrar">
