@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html ng-app="indiceProjetos">
     <head>
         <title>Índice de Projetos</title>
@@ -153,19 +153,26 @@
 
         <div class="corpo_da_pagina">
 
-            <p class="titulo_da_pagina">Índice de Projetos do Cleber Presidente 100%</p>
+            <div class="titulo_da_pagina">
+                <p>Índice de Projetos do</p>
+                <p class="titulo_da_pagina_destaque">Cleber Presidente 100%</p>
+            </div>
             
             <div class="coluna_esquerda">
 
                 <div class="titulos_container">
-                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('inteligencia')" type="button">
-                        Inteligência Artificial <span class="caret"></span>
-                    </button>
+                    <a ng-click="alternarVisibilidade('inteligencia')">
+                        <span class="titulos_nivel_1"> 
+                            Inteligência Artificial <span class="seta_nivel_1">▼</span>
+                        </span>                        
+                    </a>
                     <ul ng-show="exibir.inteligencia">
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('inteligenciaPython')" type="button">
-                                Python Fundamentos <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('inteligenciaPython')">
+                                <span class="titulos_nivel_2">
+                                    Python Fundamentos <span class="seta_nivel_2">▼</span>                                    
+                                </span>
+                            </a>
                             <ul ng-show="exibir.inteligenciaPython">
                                 <li><a class="link_repositorio" href="#">Teste 1</a></li>
                                 <li><a class="link_repositorio" href="#">Teste 2</a></li>
@@ -173,9 +180,11 @@
                             </ul>
                         </li>
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('inteligenciaDeepLearn')" type="button">
-                                Deep Learning Book <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('inteligenciaDeepLearn')">
+                                <span class="titulos_nivel_2">
+                                    Deep Learning Book <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.inteligenciaDeepLearn">
                                 <li><a class="link_repositorio" href="#">Teste 1</a></li>
                                 <li><a class="link_repositorio" href="#">Teste 2</a></li>
@@ -188,23 +197,29 @@
 
 
                 <div class="titulos_container">
-                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('anhanguera')" type="button">
-                        Anhanguera <span class="caret"></span>
-                    </button>
+                    <a ng-click="alternarVisibilidade('anhanguera')">
+                        <span class="titulos_nivel_1">
+                            Anhanguera <span class="seta_nivel_1">▼</span>
+                        </span>
+                    </a>
                     <ul ng-show="exibir.anhanguera">
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('anhangueraAlgoritmos')" type="button">
-                                Algoritmos e Estrutura de Dados <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('anhangueraAlgoritmos')">
+                                <span class="titulos_nivel_2">
+                                    Algoritmos e Estrutura de Dados <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.anhangueraAlgoritmos">
                                 <li><a class="link_repositorio" href="#">Jogo "É Duro"</a></li>
                                 <li><a class="link_repositorio" href="#">Projeto Final de Semestre</a></li>
                             </ul>
                         </li>
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('anhangueraAutomatos')" type="button">
-                                Linguagens Formais e Autômatos <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('anhangueraAutomatos')">
+                                <span class="titulos_nivel_2">
+                                    Linguagens Formais e Autômatos <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.anhangueraAutomatos">
                                 <li><a class="link_repositorio" href="#">Expressões Matemáticas</a></li>
                             </ul>
@@ -218,14 +233,18 @@
 
 
                 <div class="titulos_container">
-                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('udemy')" type="button">
-                        Udemy <span class="caret"></span>
-                    </button>
+                    <a ng-click="alternarVisibilidade('udemy')">
+                        <span class="titulos_nivel_1">
+                            Udemy <span class="seta_nivel_1">▼</span>
+                        </span>
+                    </a>
                     <ul ng-show="exibir.udemy">
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('udemyFlutter')" type="button">
-                                Flutter <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('udemyFlutter')">
+                                <span class="titulos_nivel_2">
+                                    Flutter <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.udemyFlutter">
                                 <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
                             </ul>
@@ -236,30 +255,38 @@
 
 
                 <div class="titulos_container">
-                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('outros')" type="button">
-                        Outros <span class="caret"></span>
-                    </button>
+                    <a ng-click="alternarVisibilidade('outros')">
+                        <span class="titulos_nivel_1">
+                            Outros <span class="seta_nivel_1">▼</span>
+                        </span>
+                    </a>
                     <ul ng-show="exibir.outros">
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosPython')" type="button">
-                                Python <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('outrosPython')">
+                                <span class="titulos_nivel_2">
+                                    Python <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.outrosPython">
                                 <li><a class="link_repositorio" href="#">Força Bruta p/ arquivos RAR</a></li>
                             </ul>
                         </li>
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosPhp')" type="button">
-                                PHP <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('outrosPhp')">
+                                <span class="titulos_nivel_2">
+                                    PHP <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.outrosPhp">
                                 <li><a class="link_repositorio" href="#">Planetinha</a></li>
                             </ul>
                         </li>
                         <li>
-                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosAngular')" type="button">
-                                AngularJS <span class="caret"></span>
-                            </button>
+                            <a ng-click="alternarVisibilidade('outrosAngular')">
+                                <span class="titulos_nivel_2">
+                                    AngularJS <span class="seta_nivel_2">▼</span>
+                                </span>
+                            </a>
                             <ul ng-show="exibir.outrosAngular">
                                 <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
                             </ul>

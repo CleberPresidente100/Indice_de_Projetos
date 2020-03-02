@@ -9,7 +9,7 @@
 .cabecalho{
     color: white;
     text-align: center;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     font-size: 16px;
 
     display: block;
