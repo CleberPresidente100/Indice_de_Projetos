@@ -1,0 +1,37 @@
+
+
+/***********************************************
+
+    CSS Aplicável apenas ao Rodapé
+
+***********************************************/
+
+footer{
+    font-size: 1rem;
+    text-align: center;    
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display: block;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+.rodape_1{
+    color: royalblue;
+    font-weight: bold;
+}
+
+.rodape_2{
+    color: #159957;
+    font-weight: bold;
+}
+
+.rodape_3{
+    color: royalblue;
+    font-weight: normal;
+}
+
+.rodape_4{
+    color: #819198;
+    font-weight: normal;
+}

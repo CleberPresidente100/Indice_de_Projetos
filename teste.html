@@ -4,19 +4,24 @@
         <title>Índice de Projetos</title>
 
         <!-- Configuração do Mapa de Caracteres -->
-        <meta charset="UTF-8">
+            <meta charset="UTF-8">
 
         <!-- Inclusão de Bibliotecas -->
-        <!-- <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
-        <script src="lib/jQuery/jquery-3.4.1.js"></script>
-        <script src="lib/bootstrap/bootstrap.js"></script> -->
 
-        <link href="estilo_novo.css" rel="stylesheet" type="text/css">     
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <!-- Bibliotecas de CSS Próprias -->
+            <link href="corpo.css" rel="stylesheet" type="text/css">
+            <link href="rodape.css" rel="stylesheet" type="text/css">
+            <link href="cabecalho.css" rel="stylesheet" type="text/css">
 
-        <script src="lib/AngularJS/angular.js"></script>
+            <!-- Bibliotecas Bootstrap -->
+            <script src="lib/jQuery/jquery-3.4.1.js"></script>    
+            <link href="lib/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+        
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+            <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+            <!-- Bibliotecas Angular JS -->
+            <script src="lib/AngularJS/angular.js"></script>
 
 
         <!-- Scripts de Teste -->
@@ -25,14 +30,114 @@
             angular.module("indiceProjetos").controller("indiceProjetosController", function($scope, $location){
                 
                 $scope.numero = 0;
-                $scope.mostrar = false;
+                $scope.nomeDaPagina = "Índice de Projetos"
 
-                $scope.alternarVisibilidade = function(){
-                    if($scope.mostrar)
-                        $scope.mostrar = false;
-                    else
-                        $scope.mostrar = true;
+                $scope.exibir = {
+                    inteligencia : false,
+                    inteligenciaPython : false,
+                    inteligenciaDeepLearn : false,
 
+                    anhanguera : false,
+                    anhangueraAlgoritmos : false,
+                    anhangueraAutomatos : false,
+
+                    udemy : false,
+                    udemyFlutter : false,
+
+                    outros : false,
+                    outrosPython : false,
+                    outrosPhp : false,
+                    outrosAngular : false,
+                };
+                
+
+                $scope.alternarVisibilidade = function(botao_acionado){
+
+                    // INTELIGÊNCIA ARTIFICIAL
+                    if(botao_acionado == "inteligencia"){
+                        if($scope.exibir.inteligencia){
+                            $scope.exibir.inteligencia = false;
+                            $scope.exibir.inteligenciaPython = false;
+                            $scope.exibir.inteligenciaDeepLearn = false;
+                            return;
+                        }
+                        else
+                        {
+                            $scope.exibir.inteligencia = true;
+                            $scope.exibir.inteligenciaPython = false;
+                            $scope.exibir.inteligenciaDeepLearn = false;
+                            return;
+                        }
+                    }
+                    else if(botao_acionado == "inteligenciaPython"){
+                        $scope.exibir.inteligenciaPython = !$scope.exibir.inteligenciaPython;
+                    }
+                    else if(botao_acionado == "inteligenciaDeepLearn"){
+                        $scope.exibir.inteligenciaDeepLearn = !$scope.exibir.inteligenciaDeepLearn;
+                    }
+
+
+                    // ANHANGUERA
+                    else if(botao_acionado == "anhanguera"){
+                        if($scope.exibir.anhanguera){
+                            $scope.exibir.anhanguera = false;
+                            $scope.exibir.anhangueraAlgoritmos = false;
+                            $scope.exibir.anhangueraAutomatos = false;
+                        }
+                        else{
+                            $scope.exibir.anhanguera = true;
+                            $scope.exibir.anhangueraAlgoritmos = false;
+                            $scope.exibir.anhangueraAutomatos = false;
+                        }
+                    }
+                    else if(botao_acionado == "anhangueraAlgoritmos"){
+                        $scope.exibir.anhangueraAlgoritmos = !$scope.exibir.anhangueraAlgoritmos;
+                    }
+                    else if(botao_acionado == "anhangueraAutomatos"){
+                        $scope.exibir.anhangueraAutomatos = !$scope.exibir.anhangueraAutomatos;
+                    }
+
+
+                    // UDEMY
+                    else if(botao_acionado == "udemy"){
+                        if($scope.exibir.udemy){  
+                            $scope.exibir.udemy = false;
+                            $scope.exibir.udemyFlutter = false;                          
+                        }
+                        else{
+                            $scope.exibir.udemy = true;
+                            $scope.exibir.udemyFlutter = false; 
+                        }
+                    }
+                    else if(botao_acionado == "udemyFlutter"){
+                        $scope.exibir.udemyFlutter = !$scope.exibir.udemyFlutter;
+                    }
+
+
+                    // OUTROS
+                    else if(botao_acionado == "outros"){
+                        if($scope.exibir.outros){
+                            $scope.exibir.outros = false;
+                            $scope.exibir.outrosPhp = false;
+                            $scope.exibir.outrosPython = false;
+                            $scope.exibir.outrosAngular = false;
+                        }
+                        else{
+                            $scope.exibir.outros = true;
+                            $scope.exibir.outrosPhp = false;
+                            $scope.exibir.outrosPython = false;
+                            $scope.exibir.outrosAngular = false;
+                        }
+                    }
+                    else if(botao_acionado == "outrosPhp"){
+                        $scope.exibir.outrosPhp = !$scope.exibir.outrosPhp;
+                    }
+                    else if(botao_acionado == "outrosPython"){
+                        $scope.exibir.outrosPython = !$scope.exibir.outrosPython;
+                    }
+                    else if(botao_acionado == "outrosAngular"){
+                        $scope.exibir.outrosAngular = !$scope.exibir.outrosAngular;
+                    }
                 }
             });
         </script>
@@ -41,24 +146,138 @@
     <body ng-controller="indiceProjetosController">
 
         <div class="cabecalho">
-            <h1>Índice de Projetos</h1>
+            <h1>{{nomeDaPagina}}</h1>
             <h2>Criar esta lista foi a maneira que eu encontrei para organizar todos os meus projetos aqui do GitHub.</h2>
             <a href="https://github.com/CleberPresidente100" class="cabecalho_button" target="blank">Acessar meu GitHub</a>
         </div>
 
-        <div class="titulos_container">
-            <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade()" type="button">
-                Dropdown Example <span class="caret"></span>
-            </button>
-            <ul ng-show="mostrar">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-            </ul>
-        </div> 
+        <div class="corpo_da_pagina">
 
-        <p>
-            {{"Teste = " + numero}}
-        </p>
+            <p class="titulo_da_pagina">Índice de Projetos do Cleber Presidente 100%</p>
+            
+            <div class="coluna_esquerda">
+
+                <div class="titulos_container">
+                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('inteligencia')" type="button">
+                        Inteligência Artificial <span class="caret"></span>
+                    </button>
+                    <ul ng-show="exibir.inteligencia">
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('inteligenciaPython')" type="button">
+                                Python Fundamentos <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.inteligenciaPython">
+                                <li><a class="link_repositorio" href="#">Teste 1</a></li>
+                                <li><a class="link_repositorio" href="#">Teste 2</a></li>
+                                <li><a class="link_repositorio" href="#">Teste 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('inteligenciaDeepLearn')" type="button">
+                                Deep Learning Book <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.inteligenciaDeepLearn">
+                                <li><a class="link_repositorio" href="#">Teste 1</a></li>
+                                <li><a class="link_repositorio" href="#">Teste 2</a></li>
+                                <li><a class="link_repositorio" href="#">Teste 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+                
+
+
+                <div class="titulos_container">
+                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('anhanguera')" type="button">
+                        Anhanguera <span class="caret"></span>
+                    </button>
+                    <ul ng-show="exibir.anhanguera">
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('anhangueraAlgoritmos')" type="button">
+                                Algoritmos e Estrutura de Dados <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.anhangueraAlgoritmos">
+                                <li><a class="link_repositorio" href="#">Jogo "É Duro"</a></li>
+                                <li><a class="link_repositorio" href="#">Projeto Final de Semestre</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('anhangueraAutomatos')" type="button">
+                                Linguagens Formais e Autômatos <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.anhangueraAutomatos">
+                                <li><a class="link_repositorio" href="#">Expressões Matemáticas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            
+
+            </div> <!-- Fim da Coluna da Esquerda -->            
+            <div class="coluna_direita">
+
+
+                <div class="titulos_container">
+                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('udemy')" type="button">
+                        Udemy <span class="caret"></span>
+                    </button>
+                    <ul ng-show="exibir.udemy">
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('udemyFlutter')" type="button">
+                                Flutter <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.udemyFlutter">
+                                <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+                
+
+
+                <div class="titulos_container">
+                    <button class="titulos_button_1_nivel" ng-click="alternarVisibilidade('outros')" type="button">
+                        Outros <span class="caret"></span>
+                    </button>
+                    <ul ng-show="exibir.outros">
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosPython')" type="button">
+                                Python <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.outrosPython">
+                                <li><a class="link_repositorio" href="#">Força Bruta p/ arquivos RAR</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosPhp')" type="button">
+                                PHP <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.outrosPhp">
+                                <li><a class="link_repositorio" href="#">Planetinha</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="titulos_button_2_nivel" ng-click="alternarVisibilidade('outrosAngular')" type="button">
+                                AngularJS <span class="caret"></span>
+                            </button>
+                            <ul ng-show="exibir.outrosAngular">
+                                <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- Fim da Coluna da Direita -->
+
+        </div> <!-- Fim do Corpo da Página -->
+
+        <footer>
+            <p>
+                <span class="rodape_2">This page is maintained by</span> <span class="rodape_1">CleberPresidente100.</span>
+            </p>
+            <p>
+                <span class="rodape_4">This page is located in</span> <span class="rodape_3"> GitHub Pages.</span>
+            </p>
+            
+        </footer>        
     </body>
 </html>
