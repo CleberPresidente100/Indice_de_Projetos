@@ -8,23 +8,37 @@
 
 footer{
     font-size: 1rem;
-    text-align: center;    
+    text-align: center;
     font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
     display: block;
-    width: 100%;
+    clear: both;
     box-sizing: border-box;
-    margin-top: 5rem;
+}
+
+.linha_divisoria{
+    border: 0.15rem solid #819198;
+    border-radius: 0.2rem;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    display: block;
 }
 
 .rodape_1{
-    color: royalblue;
+    font-size: 1.2rem;
     font-weight: bold;
+    display: inline;
 }
 
 .rodape_2{
     color: #159957;
     font-weight: bold;
+    display: inline;
 }
 
 .rodape_3{

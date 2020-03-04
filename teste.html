@@ -12,6 +12,7 @@
             <link href="corpo.css" rel="stylesheet" type="text/css">
             <link href="rodape.css" rel="stylesheet" type="text/css">
             <link href="cabecalho.css" rel="stylesheet" type="text/css">
+            <link href="nickname.css" rel="stylesheet" type="text/css">
 
             <!-- Bibliotecas Bootstrap -->
             <script src="lib/jQuery/jquery-3.4.1.js"></script>    
@@ -49,6 +50,23 @@
                     outrosPhp : false,
                     outrosAngular : false,
                 };
+
+                var blocoAberto = 'bloco_nivel_2_aberto';
+                var blocoFechado = 'bloco_nivel_2_fechado';
+
+                $scope.margemBottom = {
+                    inteligenciaPython : blocoFechado,
+                    inteligenciaDeepLearn : blocoFechado,
+
+                    anhangueraAlgoritmos : blocoFechado,
+                    anhangueraAutomatos : blocoFechado,
+
+                    udemyFlutter : blocoFechado,
+
+                    outrosPython : blocoFechado,
+                    outrosPhp : blocoFechado,
+                    outrosAngular : blocoFechado,                    
+                }
                 
 
                 $scope.alternarVisibilidade = function(botao_acionado){
@@ -59,6 +77,9 @@
                             $scope.exibir.inteligencia = false;
                             $scope.exibir.inteligenciaPython = false;
                             $scope.exibir.inteligenciaDeepLearn = false;
+
+                            $scope.margemBottom.inteligenciaPython = blocoFechado;
+                            $scope.margemBottom.inteligenciaDeepLearn = blocoFechado;
                             return;
                         }
                         else
@@ -66,13 +87,30 @@
                             $scope.exibir.inteligencia = true;
                             $scope.exibir.inteligenciaPython = false;
                             $scope.exibir.inteligenciaDeepLearn = false;
+
+                            $scope.margemBottom.inteligenciaPython = blocoFechado;
+                            $scope.margemBottom.inteligenciaDeepLearn = blocoFechado;
                             return;
                         }
                     }
                     else if(botao_acionado == "inteligenciaPython"){
+                        if($scope.exibir.inteligenciaPython){
+                            $scope.margemBottom.inteligenciaPython = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.inteligenciaPython = blocoAberto;
+                        }
+
                         $scope.exibir.inteligenciaPython = !$scope.exibir.inteligenciaPython;
                     }
                     else if(botao_acionado == "inteligenciaDeepLearn"){
+                        if($scope.exibir.inteligenciaDeepLearn){
+                            $scope.margemBottom.inteligenciaDeepLearn = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.inteligenciaDeepLearn = blocoAberto;
+                        }
+
                         $scope.exibir.inteligenciaDeepLearn = !$scope.exibir.inteligenciaDeepLearn;
                     }
 
@@ -83,17 +121,37 @@
                             $scope.exibir.anhanguera = false;
                             $scope.exibir.anhangueraAlgoritmos = false;
                             $scope.exibir.anhangueraAutomatos = false;
+
+                            $scope.margemBottom.anhangueraAlgoritmos = blocoFechado;
+                            $scope.margemBottom.anhangueraAutomatos = blocoFechado;
                         }
                         else{
                             $scope.exibir.anhanguera = true;
                             $scope.exibir.anhangueraAlgoritmos = false;
                             $scope.exibir.anhangueraAutomatos = false;
+
+                            $scope.margemBottom.anhangueraAlgoritmos = blocoFechado;
+                            $scope.margemBottom.anhangueraAutomatos = blocoFechado;
                         }
                     }
                     else if(botao_acionado == "anhangueraAlgoritmos"){
+                        if($scope.exibir.anhangueraAlgoritmos){
+                            $scope.margemBottom.anhangueraAlgoritmos = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.anhangueraAlgoritmos = blocoAberto;
+                        }
+
                         $scope.exibir.anhangueraAlgoritmos = !$scope.exibir.anhangueraAlgoritmos;
                     }
                     else if(botao_acionado == "anhangueraAutomatos"){
+                        if($scope.exibir.anhangueraAutomatos){
+                            $scope.margemBottom.anhangueraAutomatos = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.anhangueraAutomatos = blocoAberto;
+                        }
+
                         $scope.exibir.anhangueraAutomatos = !$scope.exibir.anhangueraAutomatos;
                     }
 
@@ -102,14 +160,25 @@
                     else if(botao_acionado == "udemy"){
                         if($scope.exibir.udemy){  
                             $scope.exibir.udemy = false;
-                            $scope.exibir.udemyFlutter = false;                          
+                            $scope.exibir.udemyFlutter = false;
+
+                            $scope.margemBottom.udemyFlutter = blocoFechado;
                         }
                         else{
                             $scope.exibir.udemy = true;
-                            $scope.exibir.udemyFlutter = false; 
+                            $scope.exibir.udemyFlutter = false;
+
+                            $scope.margemBottom.udemyFlutter = blocoFechado;
                         }
                     }
                     else if(botao_acionado == "udemyFlutter"){
+                        if($scope.exibir.udemyFlutter){
+                            $scope.margemBottom.udemyFlutter = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.udemyFlutter = blocoAberto;
+                        }
+
                         $scope.exibir.udemyFlutter = !$scope.exibir.udemyFlutter;
                     }
 
@@ -121,24 +190,54 @@
                             $scope.exibir.outrosPhp = false;
                             $scope.exibir.outrosPython = false;
                             $scope.exibir.outrosAngular = false;
+
+                            $scope.margemBottom.outrosPhp = blocoFechado;
+                            $scope.margemBottom.outrosPython = blocoFechado;
+                            $scope.margemBottom.outrosAngular = blocoFechado;
                         }
                         else{
                             $scope.exibir.outros = true;
                             $scope.exibir.outrosPhp = false;
                             $scope.exibir.outrosPython = false;
                             $scope.exibir.outrosAngular = false;
+
+                            $scope.margemBottom.outrosPhp = blocoFechado;
+                            $scope.margemBottom.outrosPython = blocoFechado;
+                            $scope.margemBottom.outrosAngular = blocoFechado;
                         }
                     }
                     else if(botao_acionado == "outrosPhp"){
+                        if($scope.exibir.outrosPhp){
+                            $scope.margemBottom.outrosPhp = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.outrosPhp = blocoAberto;
+                        }
+
                         $scope.exibir.outrosPhp = !$scope.exibir.outrosPhp;
                     }
                     else if(botao_acionado == "outrosPython"){
+                        if($scope.exibir.outrosPython){
+                            $scope.margemBottom.outrosPython = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.outrosPython = blocoAberto;
+                        }
+
                         $scope.exibir.outrosPython = !$scope.exibir.outrosPython;
                     }
                     else if(botao_acionado == "outrosAngular"){
+                        if($scope.exibir.outrosAngular){
+                            $scope.margemBottom.outrosAngular = blocoFechado;
+                        }
+                        else{
+                            $scope.margemBottom.outrosAngular = blocoAberto;
+                        }
+
                         $scope.exibir.outrosAngular = !$scope.exibir.outrosAngular;
                     }
                 }
+                
             });
         </script>
 
@@ -154,8 +253,27 @@
         <div class="corpo_da_pagina">
 
             <div class="titulo_da_pagina">
-                <p>Índice de Projetos do</p>
-                <p class="titulo_da_pagina_destaque">Cleber Presidente 100%</p>
+                <p class="titulo_da_pagina_destaque">
+                    <span class="cor_azul">C</span
+                    ><span class="cor_vermelha">l</span
+                    ><span class="cor_verde">e</span
+                    ><span class="cor_roxa">b</span
+                    ><span class="cor_amarela">e</span
+                    ><span class="cor_azul">r</span>
+
+                    <span class="cor_vermelha">P</span
+                    ><span class="cor_verde">r</span
+                    ><span class="cor_roxa">e</span
+                    ><span class="cor_amarela">s</span
+                    ><span class="cor_azul">i</span
+                    ><span class="cor_vermelha">d</span
+                    ><span class="cor_verde">e</span
+                    ><span class="cor_roxa">n</span
+                    ><span class="cor_amarela">t</span
+                    ><span class="cor_azul">e</span>
+                    
+                    <span class="cor_verde">100%</span>
+                </p>
             </div>
             
             <div class="coluna_esquerda">
@@ -167,7 +285,7 @@
                         </span>                        
                     </a>
                     <ul ng-show="exibir.inteligencia">
-                        <li>
+                        <li class={{margemBottom.inteligenciaPython}}>
                             <a ng-click="alternarVisibilidade('inteligenciaPython')">
                                 <span class="titulos_nivel_2">
                                     Python Fundamentos <span class="seta_nivel_2">▼</span>                                    
@@ -179,7 +297,7 @@
                                 <li><a class="link_repositorio" href="#">Teste 3</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class={{margemBottom.inteligenciaDeepLearn}}>
                             <a ng-click="alternarVisibilidade('inteligenciaDeepLearn')">
                                 <span class="titulos_nivel_2">
                                     Deep Learning Book <span class="seta_nivel_2">▼</span>
@@ -203,7 +321,7 @@
                         </span>
                     </a>
                     <ul ng-show="exibir.anhanguera">
-                        <li>
+                        <li class={{margemBottom.anhangueraAlgoritmos}}>
                             <a ng-click="alternarVisibilidade('anhangueraAlgoritmos')">
                                 <span class="titulos_nivel_2">
                                     Algoritmos e Estrutura de Dados <span class="seta_nivel_2">▼</span>
@@ -214,7 +332,7 @@
                                 <li><a class="link_repositorio" href="#">Projeto Final de Semestre</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class={{margemBottom.anhangueraAutomatos}}>
                             <a ng-click="alternarVisibilidade('anhangueraAutomatos')">
                                 <span class="titulos_nivel_2">
                                     Linguagens Formais e Autômatos <span class="seta_nivel_2">▼</span>
@@ -239,7 +357,7 @@
                         </span>
                     </a>
                     <ul ng-show="exibir.udemy">
-                        <li>
+                        <li class={{margemBottom.udemyFlutter}}>
                             <a ng-click="alternarVisibilidade('udemyFlutter')">
                                 <span class="titulos_nivel_2">
                                     Flutter <span class="seta_nivel_2">▼</span>
@@ -261,7 +379,7 @@
                         </span>
                     </a>
                     <ul ng-show="exibir.outros">
-                        <li>
+                        <li class={{margemBottom.outrosPython}}>
                             <a ng-click="alternarVisibilidade('outrosPython')">
                                 <span class="titulos_nivel_2">
                                     Python <span class="seta_nivel_2">▼</span>
@@ -271,7 +389,7 @@
                                 <li><a class="link_repositorio" href="#">Força Bruta p/ arquivos RAR</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class={{margemBottom.outrosPhp}}>
                             <a ng-click="alternarVisibilidade('outrosPhp')">
                                 <span class="titulos_nivel_2">
                                     PHP <span class="seta_nivel_2">▼</span>
@@ -281,7 +399,7 @@
                                 <li><a class="link_repositorio" href="#">Planetinha</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class={{margemBottom.outrosAngular}}>
                             <a ng-click="alternarVisibilidade('outrosAngular')">
                                 <span class="titulos_nivel_2">
                                     AngularJS <span class="seta_nivel_2">▼</span>
@@ -298,11 +416,35 @@
         </div> <!-- Fim do Corpo da Página -->
 
         <footer>
+            <hr class="linha_divisoria">
             <p>
-                <span class="rodape_2">This page is maintained by</span> <span class="rodape_1">CleberPresidente100.</span>
+                <div class="rodape_2">This page is maintained by</div>
+                <div class="rodape_1">
+                    <span class="cor_azul">C</span
+                    ><span class="cor_vermelha">l</span
+                    ><span class="cor_verde">e</span
+                    ><span class="cor_roxa">b</span
+                    ><span class="cor_amarela">e</span
+                    ><span class="cor_azul">r</span>
+
+                    <span class="cor_vermelha">P</span
+                    ><span class="cor_verde">r</span
+                    ><span class="cor_roxa">e</span
+                    ><span class="cor_amarela">s</span
+                    ><span class="cor_azul">i</span
+                    ><span class="cor_vermelha">d</span
+                    ><span class="cor_verde">e</span
+                    ><span class="cor_roxa">n</span
+                    ><span class="cor_amarela">t</span
+                    ><span class="cor_azul">e</span>  
+                                      
+                    <span class="cor_verde">100%</span>
+                </div>
+
+                
             </p>
             <p>
-                <span class="rodape_4">This page is located in</span> <span class="rodape_3"> GitHub Pages.</span>
+                <span class="rodape_4">This page is hosted by</span> <span class="rodape_3"> GitHub Pages.</span>
             </p>
             
         </footer>        

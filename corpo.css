@@ -31,34 +31,40 @@ li{
 
 .coluna_direita{
 	width: 50%;
-	height: auto;
-	float: right;
-	box-sizing: border-box;
+    height: auto;
+    
+    float: right;
+    display: block;
+    box-sizing: border-box;
 }
 
 .coluna_esquerda{
 	width: 50%;
-	height: auto;
+    height: auto;
+    
 	float: left;
+    display: block;
 	box-sizing: border-box;
 }
 
 .titulo_da_pagina{
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.5rem;
     color: #606c71;
 }
 
+.titulo_da_pagina p{
+    display: block
+}
+
 .titulo_da_pagina_destaque{
-    color: royalblue;
+    font-size: 2.25rem;
 }
 
 .titulos_container{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem;  /* top, right, bottom, and left values, respectively.*/
 }
 
 .seta_nivel_1{   
@@ -90,6 +96,14 @@ li{
     
     border: transparent;
     background-color: transparent;
+}
+
+.bloco_nivel_2_aberto{
+    margin-bottom: 1rem;
+}
+
+.bloco_nivel_2_fechado{
+    margin-bottom: 0.2rem;
 }
 
 .link_repositorio:any-link{

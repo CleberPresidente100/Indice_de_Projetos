@@ -1,0 +1,27 @@
+
+
+/***********************************************
+
+    CSS que se destina a Colorir as Letras do Nick
+
+***********************************************/
+
+.cor_azul{
+    color: royalblue;
+}
+
+.cor_vermelha{
+    color: red;
+}
+
+.cor_verde{
+    color: #159957;
+}
+
+.cor_roxa{
+    color: blueviolet;
+}
+
+.cor_amarela{
+    color: goldenrod;
+}
