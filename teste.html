@@ -117,6 +117,7 @@
 
                 $scope.criarMatrizDeExibicao();
                 
+                
 
 
 
@@ -124,24 +125,122 @@
 
 
 
-                $scope.estruturaBase_2 = [
+                // $scope.estruturaBase_2 = [
+                //     {
+                //         chave : "inteligencia",
+                //         estado : false, // Árvore Aberta ou Fechada
+                //         arvore :
+                //         {
+                //             titulo : "Inteligência Artificial",
+                //             subTitulos : [
+                //             {
+                //                 chave : "inteligencia", 
+                //                 arvore :
+                //                 {
+                //                     nome : "Python Fundamentos",
+                //                     estado : false, // Árvore Aberta ou Fechada
+                //                     links : [
+                //                         {nome : "Teste 01", endereco : "#"},
+                //                         {nome : "Teste 02", endereco : "#"},
+                //                         {nome : "Teste 03", endereco : "#"},
+                //                     ],
+                //                 },
+                //                 {
+                //                     nome : "Deep Learning Book",
+                //                     estado : false, // Árvore Aberta ou Fechada
+                //                     links : [
+                //                         {nome : "Teste 01", endereco : "#"},
+                //                         {nome : "Teste 02", endereco : "#"},
+                //                         {nome : "Teste 03", endereco : "#"},
+                //                     ],
+                //                 },
+                //             ],
+                //         },
+                //     {
+                //         titulo : "Anhanguera",
+                //         estado : true, // Árvore Aberta ou Fechada
+                //         subTitulos : [
+                //             {
+                //                 nome : "Linguagens Formais e Autômatos",
+                //                 estado : true, // Árvore Aberta ou Fechada
+                //                 links : [
+                //                     {nome : "Teste 01", endereco : "#"},
+                //                     {nome : "Teste 02", endereco : "#"},
+                //                     {nome : "Teste 03", endereco : "#"},
+                //                 ],
+                //             },
+                //             {
+                //                 nome : "Algoritmos e Estrutura de Dados",
+                //                 estado : true, // Árvore Aberta ou Fechada
+                //                 links : [
+                //                     {nome : "Teste 01", endereco : "#"},
+                //                     {nome : "Teste 02", endereco : "#"},
+                //                     {nome : "Teste 03", endereco : "#"},
+                //                 ],
+                //             },
+                //         ],                        
+                //     },
+
+                // ];
+
+                // console.log($scope.estruturaBase_2);
+
+
+                // $scope.criarMatrizDeExibicao_2 = function(){
+                //     $scope.estruturaBase_2.forEach(elemento => {                        
+                //         console.log("Título");
+                //         console.log(elemento.titulo);                       
+                //         console.log("Estado");
+                //         console.log(elemento.estado);                       
+                //         console.log("Subtítulos");
+                //         console.log(elemento.subTitulos);
+                //         elemento.subTitulos.forEach(subTitulo => {
+                //             console.log("Nome : " + subTitulo.nome);
+                //             console.log("Estado : " + subTitulo.estado);
+                //             subTitulo.links.forEach(link => {
+                //                 for (var [key, value] of Object.entries(link)) {
+                //                     console.log("Key : {" + key + "} - Value : {" + value + "}");
+                //                 }
+                //             });
+                //         });                        
+                //     });
+
+                // };
+
+                // $scope.criarMatrizDeExibicao_2();
+
+
+
+
+
+
+
+
+
+
+
+
+                $scope.estruturaBase_3 = [
                     {
+                        id : 0,
+                        estado : false, // TRUE --> Árvore Aberta, FALSE --> Árvore Fechada
                         titulo : "Inteligência Artificial",
-                        estado : "", // Árvore Aberta ou Fechada
                         subTitulos : [
                             {
+                                id : 1,
+                                estado : false,
                                 nome : "Python Fundamentos",
-                                estado : "", // Árvore Aberta ou Fechada
-                                links : [
+                                projetos : [
                                     {nome : "Teste 01", endereco : "#"},
                                     {nome : "Teste 02", endereco : "#"},
                                     {nome : "Teste 03", endereco : "#"},
                                 ],
                             },
                             {
+                                id : 2,
+                                estado : false,
                                 nome : "Deep Learning Book",
-                                estado : "", // Árvore Aberta ou Fechada
-                                links : [
+                                projetos : [
                                     {nome : "Teste 01", endereco : "#"},
                                     {nome : "Teste 02", endereco : "#"},
                                     {nome : "Teste 03", endereco : "#"},
@@ -150,22 +249,25 @@
                         ],
                     },
                     {
+                        id : 11,
+                        estado : false,
                         titulo : "Anhanguera",
-                        estado : "", // Árvore Aberta ou Fechada
                         subTitulos : [
                             {
+                                id : 12,
+                                estado : false,
                                 nome : "Linguagens Formais e Autômatos",
-                                estado : "", // Árvore Aberta ou Fechada
-                                links : [
+                                projetos : [
                                     {nome : "Teste 01", endereco : "#"},
                                     {nome : "Teste 02", endereco : "#"},
                                     {nome : "Teste 03", endereco : "#"},
                                 ],
                             },
                             {
+                                id : 13,
+                                estado : false,
                                 nome : "Algoritmos e Estrutura de Dados",
-                                estado : "", // Árvore Aberta ou Fechada
-                                links : [
+                                projetos : [
                                     {nome : "Teste 01", endereco : "#"},
                                     {nome : "Teste 02", endereco : "#"},
                                     {nome : "Teste 03", endereco : "#"},
@@ -175,6 +277,46 @@
                     },
 
                 ];
+
+
+                $scope.gerarIds = function(estrutura){
+                    var contador = 1;
+                    estrutura.forEach(elemento => {
+                        elemento.id = contador++;
+                        elemento.subTitulos.forEach(subTitulo => {
+                            subTitulo.id = contador++;
+                        });
+                    });
+                };
+
+                $scope.gerarIds($scope.estruturaBase_3);
+
+                $scope.alternarVisibilidade_3 = function(tituloId, subTituloId){                    
+                    estruturaBase_3.forEach(elemento => {
+                        if(elemento.id == tituloId){
+                            if(subTituloId > 0){
+                                elemento.subTitulos.forEach(subTitulo => {
+                                    if(subTitulo.id == subTituloId){
+                                        subTitulo.estado = !subTitulo.estado;
+                                        return;
+                                    }
+                                });
+                            }
+                            elemento.estado = !elemento.estado;
+                        }
+                    });
+                };
+
+
+                var blocoAberto = 'bloco_nivel_2_aberto';
+                var blocoFechado = 'bloco_nivel_2_fechado';
+
+                $scope.gerenciarEspacamento = function(estado){                    
+                    if(estado){
+                        return blocoAberto;
+                    }
+                    return blocoFechado;
+                }
 
 
 
@@ -204,8 +346,8 @@
                     outrosAngular : false,
                 };
 
-                var blocoAberto = 'bloco_nivel_2_aberto';
-                var blocoFechado = 'bloco_nivel_2_fechado';
+                // var blocoAberto = 'bloco_nivel_2_aberto';
+                // var blocoFechado = 'bloco_nivel_2_fechado';
 
                 $scope.margemBottom = {
                     inteligenciaPython : blocoFechado,
@@ -432,39 +574,108 @@
             <div class="coluna_esquerda">
                 <div class="centralizar_coluna">
 
-                    <div class="titulos_container">
-                        <a ng-click="alternarVisibilidade('inteligencia')">
-                            <span class="titulos_nivel_1"> 
-                                Inteligência Artificial <span class="seta_nivel_1">▼</span>
-                            </span>                        
-                        </a>
-                        <ul ng-show="exibir.inteligencia">
-                            <li class={{margemBottom.inteligenciaPython}}>
-                                <a ng-click="alternarVisibilidade('inteligenciaPython')">
-                                    <span class="titulos_nivel_2">
-                                        Python Fundamentos <span class="seta_nivel_2">▼</span>                                    
-                                    </span>
-                                </a>
-                                <ul ng-show="exibir.inteligenciaPython">
-                                    <li><a class="link_repositorio" href="#">Teste 1</a></li>
-                                    <li><a class="link_repositorio" href="#">Teste 2</a></li>
-                                    <li><a class="link_repositorio" href="#">Teste 3</a></li>
-                                </ul>
-                            </li>
-                            <li class={{margemBottom.inteligenciaDeepLearn}}>
-                                <a ng-click="alternarVisibilidade('inteligenciaDeepLearn')">
-                                    <span class="titulos_nivel_2">
-                                        Deep Learning Book <span class="seta_nivel_2">▼</span>
-                                    </span>
-                                </a>
-                                <ul ng-show="exibir.inteligenciaDeepLearn">
-                                    <li><a class="link_repositorio" href="#">Teste 1</a></li>
-                                    <li><a class="link_repositorio" href="#">Teste 2</a></li>
-                                    <li><a class="link_repositorio" href="#">Teste 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!-- <div ng-repeat="(key, value) in estruturaBase"> -->
+                    <div ng-repeat="elemento in estruturaBase_3">
+
+                        <div class="titulos_container">
+
+                            <!-- <a ng-click="alternarVisibilidade_3('tituloId' = elemento.id)"> -->
+                            <a ng-click="alternarVisibilidade_3(elemento.id)"></a>
+                                <span class="titulos_nivel_1"> 
+                                    {{elemento.titulo}} <span class="seta_nivel_1">▼</span>
+                                </span>                        
+                            </a>
+
+                            <ul ng-show="elemento.estado">
+
+                                <div ng-repeat="subTitulo in elemento.subTitulos">                                
+                                    <li class={{gerenciarEspacamento(elemento.estado)}}>
+
+                                        <!-- <a ng-click="alternarVisibilidade_3('tituloId'= elemento.id, 'subTituloId' = subTitulo.id)"> -->
+                                        <a ng-click="alternarVisibilidade_3(elemento.id, subTitulo.id)">
+                                            <span class="titulos_nivel_2">
+                                                {{subTitulo.nome}} <span class="seta_nivel_2">▼</span>                                    
+                                            </span>
+                                        </a>
+
+                                        <ul ng-show="subTitulo.estado">
+                                            <div ng-repeat="projeto in subTitulo.projetos">
+                                                <li>
+                                                    <a class="link_repositorio" href="{{projeto.endereco}}">
+                                                        {{projeto.nome}}
+                                                    </a>
+                                                </li>
+                                            </div> <!-- Fim Repeat Projetos -->
+                                        </ul>
+
+                                    </li>
+                                </div> <!-- Fim Repeat Subtítulos -->
+                            </ul>
+
+                        </div>
+
+                    </div> <!-- Fim Repeat Títulos  -->
+
+
+                        <div class="titulos_container">
+                            <a ng-click="alternarVisibilidade('inteligencia')">
+                                <span class="titulos_nivel_1"> 
+                                    Inteligência Artificial <span class="seta_nivel_1">▼</span>
+                                </span>                        
+                            </a>
+                            <ul ng-show="exibir.inteligencia">
+                                <li class={{margemBottom.inteligenciaPython}}>
+                                    <a ng-click="alternarVisibilidade('inteligenciaPython')">
+                                        <span class="titulos_nivel_2">
+                                            Python Fundamentos <span class="seta_nivel_2">▼</span>                                    
+                                        </span>
+                                    </a>
+                                    <ul ng-show="exibir.inteligenciaPython">
+                                        <li><a class="link_repositorio" href="#">Teste 1</a></li>
+                                        <li><a class="link_repositorio" href="#">Teste 2</a></li>
+                                        <li><a class="link_repositorio" href="#">Teste 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class={{margemBottom.inteligenciaDeepLearn}}>
+                                    <a ng-click="alternarVisibilidade('inteligenciaDeepLearn')">
+                                        <span class="titulos_nivel_2">
+                                            Deep Learning Book <span class="seta_nivel_2">▼</span>
+                                        </span>
+                                    </a>
+                                    <ul ng-show="exibir.inteligenciaDeepLearn">
+                                        <li><a class="link_repositorio" href="#">Teste 1</a></li>
+                                        <li><a class="link_repositorio" href="#">Teste 2</a></li>
+                                        <li><a class="link_repositorio" href="#">Teste 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+                    
+
+                     
                     
 
 
