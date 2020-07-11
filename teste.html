@@ -72,25 +72,10 @@
             <div class="coluna_esquerda">
                 <div class="centralizar_coluna">
 
-
-
-
-
-
-
-
-
-
-
-
-
-                    <!-- <div ng-repeat="(key, value) in estruturaBase"> -->
-                    <div ng-repeat="elemento in estruturaBase_3">
-
+                    <div ng-repeat="elemento in arvoreMenusEsquerda">
                         <div class="titulos_container">
 
-                            <!-- <a ng-click="alternarVisibilidade_3('tituloId' = elemento.id)"> -->
-                            <a ng-click="alternarVisibilidade_3(elemento.id)">
+                            <a ng-click="alternarVisibilidade(arvoreMenusEsquerda, elemento.id)">
                                 <span class="titulos_nivel_1"> 
                                     {{elemento.titulo}} <span class="seta_nivel_1">▼</span>
                                 </span>                        
@@ -101,8 +86,7 @@
                                 <div ng-repeat="subTitulo in elemento.subTitulos">                                
                                     <li class={{gerenciarEspacamento(subTitulo.estado)}}>
 
-                                        <!-- <a ng-click="alternarVisibilidade_3('tituloId'= elemento.id, 'subTituloId' = subTitulo.id)"> -->
-                                        <a ng-click="alternarVisibilidade_3(elemento.id, subTitulo.id)">
+                                        <a ng-click="alternarVisibilidade(arvoreMenusEsquerda, elemento.id, subTitulo.id)">
                                             <span class="titulos_nivel_2">
                                                 {{subTitulo.nome}} <span class="seta_nivel_2">▼</span>                                    
                                             </span>
@@ -123,157 +107,51 @@
                             </ul>
 
                         </div>
-
                     </div> <!-- Fim Repeat Títulos  -->
-
-
-                        <div class="titulos_container">
-                            <a ng-click="alternarVisibilidade('inteligencia')">
-                                <span class="titulos_nivel_1"> 
-                                    Inteligência Artificial <span class="seta_nivel_1">▼</span>
-                                </span>                        
-                            </a>
-                            <ul ng-show="exibir.inteligencia">
-                                <li class={{margemBottom.inteligenciaPython}}>
-                                    <a ng-click="alternarVisibilidade('inteligenciaPython')">
-                                        <span class="titulos_nivel_2">
-                                            Python Fundamentos <span class="seta_nivel_2">▼</span>                                    
-                                        </span>
-                                    </a>
-                                    <ul ng-show="exibir.inteligenciaPython">
-                                        <li><a class="link_repositorio" href="#">Teste 1</a></li>
-                                        <li><a class="link_repositorio" href="#">Teste 2</a></li>
-                                        <li><a class="link_repositorio" href="#">Teste 3</a></li>
-                                    </ul>
-                                </li>
-                                <li class={{margemBottom.inteligenciaDeepLearn}}>
-                                    <a ng-click="alternarVisibilidade('inteligenciaDeepLearn')">
-                                        <span class="titulos_nivel_2">
-                                            Deep Learning Book <span class="seta_nivel_2">▼</span>
-                                        </span>
-                                    </a>
-                                    <ul ng-show="exibir.inteligenciaDeepLearn">
-                                        <li><a class="link_repositorio" href="#">Teste 1</a></li>
-                                        <li><a class="link_repositorio" href="#">Teste 2</a></li>
-                                        <li><a class="link_repositorio" href="#">Teste 3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    <!-- </div> -->
-
-
-
-
-
-
-
-
-
-
-                    
-
-                     
-                    
-
-
-                    <div class="titulos_container">
-                        <a ng-click="alternarVisibilidade('anhanguera')">
-                            <span class="titulos_nivel_1">
-                                Anhanguera <span class="seta_nivel_1">▼</span>
-                            </span>
-                        </a>
-                        <ul ng-show="exibir.anhanguera">
-                            <li class={{margemBottom.anhangueraAlgoritmos}}>
-                                <a ng-click="alternarVisibilidade('anhangueraAlgoritmos')">
-                                    <span class="titulos_nivel_2">
-                                        Algoritmos e Estrutura de Dados <span class="seta_nivel_2">▼</span>
-                                    </span>
-                                </a>
-                                <ul ng-show="exibir.anhangueraAlgoritmos">
-                                    <li><a class="link_repositorio" href="#">Jogo "É Duro"</a></li>
-                                    <li><a class="link_repositorio" href="#">Projeto Final de Semestre</a></li>
-                                </ul>
-                            </li>
-                            <li class={{margemBottom.anhangueraAutomatos}}>
-                                <a ng-click="alternarVisibilidade('anhangueraAutomatos')">
-                                    <span class="titulos_nivel_2">
-                                        Linguagens Formais e Autômatos <span class="seta_nivel_2">▼</span>
-                                    </span>
-                                </a>
-                                <ul ng-show="exibir.anhangueraAutomatos">
-                                    <li><a class="link_repositorio" href="#">Expressões Matemáticas</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
                 </div> <!-- Fim da Centralização -->
             </div> <!-- Fim da Coluna da Esquerda -->
+
+
             <div class="coluna_direita">
+                <div class="centralizar_coluna">
 
+                    <div ng-repeat="elemento in arvoreMenusDireita">
+                        <div class="titulos_container">
 
-                <div class="titulos_container">
-                    <a ng-click="alternarVisibilidade('udemy')">
-                        <span class="titulos_nivel_1">
-                            Udemy <span class="seta_nivel_1">▼</span>
-                        </span>
-                    </a>
-                    <ul ng-show="exibir.udemy">
-                        <li class={{margemBottom.udemyFlutter}}>
-                            <a ng-click="alternarVisibilidade('udemyFlutter')">
-                                <span class="titulos_nivel_2">
-                                    Flutter <span class="seta_nivel_2">▼</span>
-                                </span>
+                            <a ng-click="alternarVisibilidade(arvoreMenusDireita, elemento.id)">
+                                <span class="titulos_nivel_1"> 
+                                    {{elemento.titulo}} <span class="seta_nivel_1">▼</span>
+                                </span>                        
                             </a>
-                            <ul ng-show="exibir.udemyFlutter">
-                                <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> 
-                
 
+                            <ul ng-show="elemento.estado">
 
-                <div class="titulos_container">
-                    <a ng-click="alternarVisibilidade('outros')">
-                        <span class="titulos_nivel_1">
-                            Outros <span class="seta_nivel_1">▼</span>
-                        </span>
-                    </a>
-                    <ul ng-show="exibir.outros">
-                        <li class={{margemBottom.outrosPython}}>
-                            <a ng-click="alternarVisibilidade('outrosPython')">
-                                <span class="titulos_nivel_2">
-                                    Python <span class="seta_nivel_2">▼</span>
-                                </span>
-                            </a>
-                            <ul ng-show="exibir.outrosPython">
-                                <li><a class="link_repositorio" href="#">Força Bruta p/ arquivos RAR</a></li>
+                                <div ng-repeat="subTitulo in elemento.subTitulos">                                
+                                    <li class={{gerenciarEspacamento(subTitulo.estado)}}>
+
+                                        <a ng-click="alternarVisibilidade(arvoreMenusDireita, elemento.id, subTitulo.id)">
+                                            <span class="titulos_nivel_2">
+                                                {{subTitulo.nome}} <span class="seta_nivel_2">▼</span>                                    
+                                            </span>
+                                        </a>
+
+                                        <ul ng-show="subTitulo.estado">
+                                            <div ng-repeat="projeto in subTitulo.projetos">
+                                                <li>
+                                                    <a class="link_repositorio" href="{{projeto.endereco}}">
+                                                        {{projeto.nome}}
+                                                    </a>
+                                                </li>
+                                            </div> <!-- Fim Repeat Projetos -->
+                                        </ul>
+
+                                    </li>
+                                </div> <!-- Fim Repeat Subtítulos -->
                             </ul>
-                        </li>
-                        <li class={{margemBottom.outrosPhp}}>
-                            <a ng-click="alternarVisibilidade('outrosPhp')">
-                                <span class="titulos_nivel_2">
-                                    PHP <span class="seta_nivel_2">▼</span>
-                                </span>
-                            </a>
-                            <ul ng-show="exibir.outrosPhp">
-                                <li><a class="link_repositorio" href="#">Planetinha</a></li>
-                            </ul>
-                        </li>
-                        <li class={{margemBottom.outrosAngular}}>
-                            <a ng-click="alternarVisibilidade('outrosAngular')">
-                                <span class="titulos_nivel_2">
-                                    AngularJS <span class="seta_nivel_2">▼</span>
-                                </span>
-                            </a>
-                            <ul ng-show="exibir.outrosAngular">
-                                <li><a class="link_repositorio" href="#">Todos os Exercícios</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+
+                        </div>
+                    </div> <!-- Fim Repeat Títulos  -->
+                </div> <!-- Fim da Centralização -->
             </div> <!-- Fim da Coluna da Direita -->
 
         </div> <!-- Fim do Corpo da Página -->
