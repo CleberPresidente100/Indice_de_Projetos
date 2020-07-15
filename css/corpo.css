@@ -47,10 +47,9 @@ li{
 	box-sizing: border-box;
 }
 
-/* .centralizar_coluna{
-    margin-left: 50%;
-    margin-right: 50%;
-} */
+.centralizar_coluna_esquerda{
+    /* margin-left: 50%; */
+}
 
 .titulo_da_pagina{
     text-align: center;
