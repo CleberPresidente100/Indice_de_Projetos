@@ -61,6 +61,21 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
         {
             id : 0,
             estado : false,
+            titulo : "Udemy",
+            subTitulos : [
+                {
+                    id : 0,
+                    estado : false,
+                    nome : "Flutter",
+                    projetos : [
+                        {nome : "Todos os Exercícios", endereco : "https://github.com/CleberPresidente100/Udemy_Flutter"},
+                    ],
+                },
+            ],                        
+        },
+        {
+            id : 0,
+            estado : false,
             titulo : "Cursos",
             subTitulos : [
                 {
@@ -69,14 +84,6 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                     nome : "AngularJS",
                     projetos : [
                         {nome : "Todos os Exercícios", endereco : "https://github.com/CleberPresidente100/AngularJS"},
-                    ],
-                },
-                {
-                    id : 0,
-                    estado : false,
-                    nome : "Flutter (Udemy)",
-                    projetos : [
-                        {nome : "Todos os Exercícios", endereco : "https://github.com/CleberPresidente100/Udemy_Flutter"},
                     ],
                 },
             ],                        
