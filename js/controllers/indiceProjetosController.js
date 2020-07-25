@@ -1,5 +1,5 @@
 
-angular.module("indiceProjetos", []);
+
 angular.module("indiceProjetos").controller("indiceProjetosController", function($scope, arvoreMenusAPI){
     
     $scope.numero = 0;
