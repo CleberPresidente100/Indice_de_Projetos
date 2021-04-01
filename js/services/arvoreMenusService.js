@@ -34,7 +34,7 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
-                    nome : "Programação Orientada a Objetos II",
+                    nome : "(6º Sem.) Programação Orientada a Objetos II",
                     projetos : [
                         {nome : "Aulas / Exercícios", endereco : "https://github.com/CleberPresidente100/Anhanguera_POO2_Java"},
                     ],
@@ -42,7 +42,7 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
-                    nome : "Programação em Banco de Dados",
+                    nome : "(6º Sem.) Programação em Banco de Dados",
                     projetos : [
                         {nome : "Aulas / Exercícios", endereco : "https://github.com/CleberPresidente100/Anhanguera_Programacao_Banco_Dados"},
                     ],
@@ -50,7 +50,7 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
-                    nome : "Compiladores",
+                    nome : "(4º Sem.) Compiladores",
                     projetos : [
                         {nome : "Tabela de Símbolos", endereco : "https://github.com/CleberPresidente100/TabelaDeSimbolos"},
                     ],
@@ -58,7 +58,7 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
-                    nome : "Linguagens Formais e Autômatos",
+                    nome : "(3º Sem.) Linguagens Formais e Autômatos",
                     projetos : [
                         {nome : "Expressões Matemáticas", endereco : "https://github.com/CleberPresidente100/Expressoes_Matematicas"},
                     ],
@@ -66,7 +66,7 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
-                    nome : "Algoritmos e Estrutura de Dados",
+                    nome : "(2º Sem.) Algoritmos e Estrutura de Dados",
                     projetos : [
                         {nome : "Jogo \"É Duro\"", endereco : "https://github.com/CleberPresidente100/Jogo_E_Duro"},
                         {nome : "Projeto de Final de Semestre", endereco : "https://github.com/CleberPresidente100/Projeto_Final_de_Semestre"},
