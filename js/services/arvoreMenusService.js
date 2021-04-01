@@ -34,6 +34,22 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
+                    nome : "Programação Orientada a Objetos II",
+                    projetos : [
+                        {nome : "Aulas / Exercícios", endereco : "https://github.com/CleberPresidente100/Anhanguera_POO2_Java"},
+                    ],
+                },
+                {
+                    id : 0,
+                    estado : false,
+                    nome : "Programação em Banco de Dados",
+                    projetos : [
+                        {nome : "Aulas / Exercícios", endereco : "https://github.com/CleberPresidente100/Anhanguera_Programacao_Banco_Dados"},
+                    ],
+                },
+                {
+                    id : 0,
+                    estado : false,
                     nome : "Compiladores",
                     projetos : [
                         {nome : "Tabela de Símbolos", endereco : "https://github.com/CleberPresidente100/TabelaDeSimbolos"},
