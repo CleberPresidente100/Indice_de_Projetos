@@ -50,6 +50,14 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
+                    nome : "(5º Sem.) Análise de Computabilidade e Complexidade de Algoritmos",
+                    projetos : [
+                        {nome : "Artigo", endereco : "https://github.com/CleberPresidente100/Analise_de_Computabilidade_e_Complexidade_de_Algoritmos"},
+                    ],
+                },
+                {
+                    id : 0,
+                    estado : false,
                     nome : "(4º Sem.) Compiladores",
                     projetos : [
                         {nome : "Tabela de Símbolos", endereco : "https://github.com/CleberPresidente100/TabelaDeSimbolos"},
