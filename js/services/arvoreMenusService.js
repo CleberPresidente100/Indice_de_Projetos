@@ -11,6 +11,14 @@ angular.module("indiceProjetos").factory("arvoreMenusAPI", function (){
                 {
                     id : 0,
                     estado : false,
+                    nome : "Data Science (Santander Coders)",
+                    projetos : [
+                        {nome : "Aulas / Exercícios", endereco : "https://github.com/CleberPresidente100/SantanderCodersDataScience"},
+                    ],
+                },
+                {
+                    id : 0,
+                    estado : false,
                     nome : "Python Fundamentos",
                     projetos : [
                         {nome : "Vazio", endereco : "#"},
